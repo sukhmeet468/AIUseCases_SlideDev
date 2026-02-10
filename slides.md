@@ -1568,9 +1568,13 @@ Questions?
 
 <div class="mt-8">
 
-📧 **Contact:** your-email@company.com
+📧 **Contact:** sukhmeeth@indusautomation.com
 
-📚 **Follow-up:** Internal training deck on AI-assisted engineering workflows
+📚 **Follow-up:** session a couple weeks later to see how everyone has been doing with their workflows and if they've implemented AI in their workflows.
+
+📚 **Food for thought for later:** 
+Field loop drawing automation 
+Company Personal AI Model trained on our company data, past jobs folder for any questions available only org wide 
 
 </div>
 
