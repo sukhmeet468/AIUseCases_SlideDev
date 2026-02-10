@@ -1093,6 +1093,7 @@ class: overflow-y-auto
 **Full AI Workflow Tutorial!**
 
 🔗 **https://convertio.co/**
+🔗 **https://www.youtube.com/watch?v=1zkz3EJmltU**
 
 ## Perplexity Review Drawing
 
