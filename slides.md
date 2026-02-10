@@ -1568,6 +1568,8 @@ class: overflow-y-auto
 
 # Thank You! 🎉
 
+<v-click>
+
 Questions?
 
 <div class="mt-8">
@@ -1589,6 +1591,8 @@ Questions?
 <div class="mt-12 text-sm opacity-75">
 
 Press <kbd>space</kbd> to navigate • Press <kbd>f</kbd> for fullscreen • Press <kbd>o</kbd> for presenter mode
+
+</v-click>
 
 </div>
 
