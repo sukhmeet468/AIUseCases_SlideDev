@@ -1,5 +1,6 @@
 ---
 theme: default
+transition: slide-left
 layout: cover
 class: text-center
 ---
@@ -969,7 +970,7 @@ Questions?
 
 <div class="mt-8">
 
-📧 **Contact:** your-email@company.com
+📧 **Contact:** sukhmeeth@indusautomation.com
 
 📚 **Follow-up:** Internal training deck on AI-assisted engineering workflows
 
