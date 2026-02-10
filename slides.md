@@ -1573,8 +1573,10 @@ Questions?
 📚 **Follow-up:** session a couple weeks later to see how everyone has been doing with their workflows and if they've implemented AI in their workflows.
 
 📚 **Food for thought for later:** 
-Field loop drawing automation 
-Company Personal AI Model trained on our company data, past jobs folder for any questions available only org wide 
+- Field loop drawing automation 
+- Company Knowledge Assistant (Secure Search + Q&A) FAR FETCHED
+   - What it is: An internal, permission-controlled assistant that lets teams ask questions across past jobs and documents and get answers with citations.
+   - What it enables: Fast retrieval of files/info, parts, BOMs, quotes, drawings, code, and lessons learned from similar past jobs.
 
 </div>
 
