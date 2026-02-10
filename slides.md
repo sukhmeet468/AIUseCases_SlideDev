@@ -1521,48 +1521,6 @@ layout: default
 class: overflow-y-auto
 ---
 
-# Additional Topics
-
-<div class="overflow-y-auto max-h-120">
-
-<v-clicks>
-
-## Field Loop Drawing Automation
-
-Using AI to automate repetitive drawing tasks
-
-## AI Trained on Job Folders
-
-Custom AI trained on your organization's project history for answering questions
-
-</v-clicks>
-
-</div>
-
-<!--
-ADVANCED TOPICS
-
-1. Field Loop Drawing Automation
-   - Automate creation of loop drawings
-   - Generate I/O lists automatically
-   - Standard templates with AI assistance
-
-2. AI Trained on Your Data
-   - Upload past projects, standards, procedures
-   - Create custom knowledge base
-   - Answer questions based on your specific history
-   - "How did we handle X on the SANDVIK project?"
-
-These require more setup but offer huge ROI for organizations
-
-Time: 2 minutes
--->
-
----
-layout: default
-class: overflow-y-auto
----
-
 # 🎯 Interactive Activity
 ## Let's Practice Together!
 
@@ -1607,7 +1565,7 @@ The goal: How the user's judgement of the task or topic creates different prompt
 
 ---
 layout: center
-class: text-center
+class: overflow-y-auto
 ---
 
 # Thank You! 🎉
