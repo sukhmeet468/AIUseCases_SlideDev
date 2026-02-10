@@ -1590,11 +1590,11 @@ Questions?
 
 </div>
 
+</v-click>
+
 <div class="mt-12 text-sm opacity-75">
 
 Press <kbd>space</kbd> to navigate • Press <kbd>f</kbd> for fullscreen • Press <kbd>o</kbd> for presenter mode
-
-</v-click>
 
 </div>
 
