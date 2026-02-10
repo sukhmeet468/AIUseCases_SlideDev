@@ -1528,8 +1528,6 @@ class: overflow-y-auto
 
 <v-click>
 
-### Choose ONE task to try right now:
-
 <div class="grid grid-cols-2 gap-4 mt-4">
 
 Ask Copilot to get a summary or questions about the session, create a technical illustration or diagram or document and write an email explaining lessons learned during session.
