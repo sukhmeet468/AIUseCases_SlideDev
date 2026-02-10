@@ -160,7 +160,7 @@ BAD PROMPT:
 Explain ground fault protection
 
 GOOD PROMPT:
-You are an industrial automation engineer. Explain ground fault protection for a 480V industrial system. Audience: new maintenance technician. Include different types, why it is used, common causes, and typical troubleshooting steps. Include sources and links for reference and validation. Include a real world scenario and example to explain to a non technical person. Limit to 200 words.
+You are an industrial automation engineer. Explain ground fault protection for a 480V industrial system. Audience: new maintenance technician. Include why it is used, common causes, and typical troubleshooting steps. Limit to 200 words.
 
 DEMO OPPORTUNITY: If time permits, run both prompts live to show the difference in quality
 
@@ -1558,6 +1558,53 @@ Time: 2 minutes
 -->
 
 ---
+layout: default
+class: overflow-y-auto
+---
+
+# 🎯 Interactive Activity
+## Let's Practice Together!
+
+<div class="text-sm overflow-y-auto max-h-120">
+
+<v-click>
+
+### Choose ONE task to try right now:
+
+<div class="grid grid-cols-2 gap-4 mt-4">
+
+Ask Copilot to get a summary or questions about the session, create a technical illustration or diagram or document and write an email explaining lessons learned during session.
+
+</div>
+
+</v-click>
+
+<v-click>
+
+### Instructions:
+
+1. **Open your AI tool** (Copilot, ChatGPT, etc.)
+2. **Write your prompt** (remember: Role, Task, Audience, Constraints!)
+3. **Share your result in the chat** so everyone can see
+4. **Compare the outputs** - same task, different prompts = different results!
+
+</v-click>
+
+<v-click>
+
+<div class="mt-4 p-4 bg-yellow-50 dark:bg-yellow-900 rounded">
+
+**⏱️ Time: 3-5 minutes**
+
+The goal: How the user's judgement of the task or topic creates different prompts and leads to different responses.!
+
+</div>
+
+</v-click>
+
+</div>
+
+---
 layout: center
 class: text-center
 ---
@@ -1570,13 +1617,7 @@ Questions?
 
 📧 **Contact:** sukhmeeth@indusautomation.com
 
-📚 **Follow-up:** session a couple weeks later to see how everyone has been doing with their workflows and if they've implemented AI in their workflows.
-
-📚 **Food for thought for later:** 
-- Field loop drawing automation 
-- Company Knowledge Assistant (Secure Search + Q&A) FAR FETCHED
-   - What it is: An internal, permission-controlled assistant that lets teams ask questions across past jobs and documents and get answers with citations.
-   - What it enables: Fast retrieval of files/info, parts, BOMs, quotes, drawings, code, and lessons learned from similar past jobs.
+📚 **Follow-up:** Internal training deck on AI-assisted engineering workflows
 
 </div>
 
