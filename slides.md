@@ -1568,6 +1568,8 @@ class: overflow-y-auto
 
 # Thank You! 🎉
 
+<div class="text-sm overflow-y-auto max-h-120">
+
 <v-click>
 
 Questions?
@@ -1593,6 +1595,8 @@ Questions?
 Press <kbd>space</kbd> to navigate • Press <kbd>f</kbd> for fullscreen • Press <kbd>o</kbd> for presenter mode
 
 </v-click>
+
+</div>
 
 </div>
 
