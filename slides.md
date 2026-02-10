@@ -1617,7 +1617,15 @@ Questions?
 
 📧 **Contact:** sukhmeeth@indusautomation.com
 
-📚 **Follow-up:** Internal training deck on AI-assisted engineering workflows
+📚 **Follow-up:** session a couple weeks later to see how everyone has been doing with their workflows and if they've implemented AI in their workflows.
+
+📚 **Food for thought:**
+- Company Knowledge Assistant (Secure Search + Q&A) FAR FETCHED THOUGHT
+   - What it is: An internal, permission-controlled assistant that lets teams ask questions across past jobs and documents and get answers with citations.
+   - What it enables: Fast retrieval of documents or information, parts, BOMs, quotes, drawings, code, and lessons learned from similar past jobs.
+   - Example questions
+      - “Show me a past job similar to a 3-pump lift station with VFDs.”
+      - “What VFD frame size did we use on the last 25HP ABB install?”
 
 </div>
 
