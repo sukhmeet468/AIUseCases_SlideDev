@@ -35,32 +35,6 @@ Presenter tip: Ask audience about their current AI usage to gauge experience lev
 layout: default
 ---
 
-# Quality Control & Fact Checking
-
-<v-clicks>
-
-- ✅ Treat AI output as a **first draft**, not final truth
-- 🔍 Always cross-check:
-  - Codes and standards (NEC, IEC, local regs)
-  - Vendor datasheets and manuals
-- 📋 Use AI to **surface information quickly**, then verify with primary sources
-
-</v-clicks>
-
-<!--
-CRITICAL REMINDER: AI is a tool, not a replacement for engineering judgment
-
-Emphasize:
-- Always verify against authoritative sources
-- AI can hallucinate or provide outdated information
-- Use AI to accelerate, not replace, verification
-
--->
-
----
-layout: default
----
-
 # Writing Prompts to Use AI
 
 <v-click>
@@ -1324,8 +1298,6 @@ Requirements:
 This demonstrates how to write detailed requirements for code generation.
 
 Key: Be specific about inputs, outputs, performance requirements, and constraints.
-
-Time: 2 minutes
 -->
 
 ---
@@ -1333,82 +1305,59 @@ layout: default
 class: overflow-y-auto
 ---
 
-# Different AI Tools
+# Different AI Tools & Platforms
 
-<div class="grid grid-cols-2 gap-4 text-sm overflow-y-auto max-h-120">
+<div class="grid grid-cols-2 gap-8 text-sm overflow-y-auto max-h-120">
 
-<div v-click>
+<div>
 
-## **GitHub Co-Pilot (Default)**
+## 🔧 AI Tools (Use-Case Focused)
 
+### **GitHub Copilot**
 IDE-integrated coding assistance
 
-</div>
+### **ChatGPT**
+Coding workflows, text formatting, custom agents
 
-<div v-click>
+### **Claude**
+Long documents, coding workflows, SPA development
 
-## **ChatGPT**
+### **Perplexity**
+Deep research with citations
 
-- Coding Workflows
-- Text formatting
-- General agents
+### **Google Gemini**
+Image generation + multimodal tasks
 
-</div>
-
-<div v-click>
-
-## **Perplexity**
-
-- Deep Research with Sources
+### **Adobe Firefly**
+Graphics, marketing visuals, creative content
 
 </div>
 
-<div v-click>
+<div>
 
-## **Google Gemini**
+## 🖥️ AI Platforms (Where You Use AI)
 
-- Generating Images
+### **Microsoft Copilot**
+Integrated into M365 (Excel, Word, Outlook, Teams)
+
+### **ChatGPT**
+General-purpose AI platform
+
+### **Whisper Flow**
+Voice-to-text productivity workflows
+
+### **Chatronix**
+Multi-model access + prompt generator
+
+### **Microsoft Teams**
+Integrated Copilot + collaboration
+
+### **TeamsMaestro**
+AI meeting notes & summaries
 
 </div>
 
-<div v-click>
-
-## **Claude**
-
-- Coding Workflows
-- Develop single page applications
-
 </div>
-
-</div>
-
-<!--
-TOOL SELECTION GUIDE
-
-GitHub Co-Pilot:
-- Best for: Real-time code completion in IDE
-- Use when: Actively coding
-
-ChatGPT:
-- Best for: General purpose, agents, text work
-- Use when: Versatile tasks, custom GPTs
-
-Perplexity:
-- Best for: Research with citations
-- Use when: Need to verify sources
-
-Google Gemini:
-- Best for: Image generation
-- Use when: Need visuals, graphics
-
-Claude:
-- Best for: Complex coding, long documents
-- Use when: Building applications, deep analysis
-
-Pro tip: Use the right tool for each job - don't try to do everything in one platform
-
-Time: 3 minutes
--->
 
 ---
 layout: default
@@ -1456,6 +1405,89 @@ The goal: How the user's judgement of the task or topic creates different prompt
 </div>
 
 ---
+layout: default
+---
+
+# Quality Control & Fact Checking
+
+<v-clicks>
+
+- ✅ Treat AI output as a **first draft**, not final truth
+- 🔍 Always cross-check:
+  - Codes and standards (NEC, IEC, local regs)
+  - Vendor datasheets and manuals
+- 📋 Use AI to **surface information quickly**, then verify with primary sources
+
+</v-clicks>
+
+<!--
+CRITICAL REMINDER: AI is a tool, not a replacement for engineering judgment
+
+Emphasize:
+- Always verify against authoritative sources
+- AI can hallucinate or provide outdated information
+- Use AI to accelerate, not replace, verification
+
+-->
+
+---
+layout: default
+class: overflow-y-auto
+---
+
+# Different Types of Modes / Models
+## When to Use Each (Copilot / GPT Modes)
+
+<div class="grid grid-cols-2 gap-8 text-sm overflow-y-auto max-h-120">
+
+<div>
+
+## ⚡ Default / Quick Response
+
+**Best For:**
+- Email drafting
+- Simple summaries
+- Quick explanations
+- Formatting tasks
+- Rewriting content
+- Basic coding help
+
+**Why:**
+- Faster
+- Lower compute
+- Good for routine work
+- Ideal for iterative prompting
+
+Use when speed > depth.
+
+</div>
+
+<div>
+
+## 🧠 Think Deeper / Deep Research
+
+**Best For:**
+- Complex engineering reasoning
+- Multi-step logic problems
+- Comparing datasheets
+- Risk analysis
+- Capacity planning
+- Code generation with edge cases
+- Strategic decisions
+
+**Why:**
+- More structured thinking
+- Better reasoning
+- Fewer surface-level answers
+- Stronger comparison outputs
+
+Use when accuracy > speed.
+
+</div>
+
+</div>
+
+---
 layout: center
 class: overflow-y-auto
 ---
@@ -1470,11 +1502,12 @@ Questions?
 
 <div class="mt-8">
 
-📧 **Contact:** sukhmeeth@indusautomation.com
+📧 **Contact:** sukhmeeth@indusautomation.com, dayakarn@indusautomation.com
 
 📚 **Follow-up:** session a couple weeks later to see how everyone has been doing with their workflows and if they've implemented AI in their workflows.
 
 📚 **Food for thought:**
+- Field Loop Drawings
 - Company Knowledge Assistant (Secure Search + Q&A) FAR FETCHED THOUGHT
    - What it is: An internal, permission-controlled assistant that lets teams ask questions across past jobs and documents and get answers with citations.
    - What it enables: Fast retrieval of documents or information, parts, BOMs, quotes, drawings, code, and lessons learned from similar past jobs.
