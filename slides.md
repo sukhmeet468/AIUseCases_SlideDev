@@ -1355,6 +1355,9 @@ Integrated Copilot + collaboration
 ### **TeamsMaestro**
 AI meeting notes & summaries
 
+### **tl;dv***
+AI meeting notes & summaries - https://tldv.io/
+
 </div>
 
 </div>
