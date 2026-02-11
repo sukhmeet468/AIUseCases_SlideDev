@@ -1505,7 +1505,7 @@ Questions?
 
 <div class="mt-8">
 
-📧 **Contact:** sukhmeeth@indusautomation.com, dayakarn@indusautomation.com
+📧 **Contact:** dayakarn@indusautomation.com, sukhmeeth@indusautomation.com
 
 📚 **Follow-up:** session a couple weeks later to see how everyone has been doing with their workflows and if they've implemented AI in their workflows.
 
