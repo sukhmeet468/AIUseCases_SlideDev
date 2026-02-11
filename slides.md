@@ -55,9 +55,6 @@ Emphasize:
 - AI can hallucinate or provide outdated information
 - Use AI to accelerate, not replace, verification
 
-Story to share: Example of when AI gave plausible but incorrect code reference
-
-Time: 2-3 minutes
 -->
 
 ---
@@ -113,9 +110,6 @@ Explain each element:
 3. AUDIENCE - Determines complexity and terminology
 4. CONSTRAINTS - Format, length, tone requirements
 
-Interactive: Ask someone to suggest a topic, build a prompt together on the fly
-
-Time: 5 minutes
 -->
 
 ---
@@ -124,6 +118,8 @@ class: overflow-y-auto
 ---
 
 # Good vs Bad Prompt
+
+<v-click>
 
 ## ❌ Bad Prompt
 
@@ -137,7 +133,11 @@ class: overflow-y-auto
 - Too vague
 - No context, audience, or limits
 
+</v-click>
+
 ::right::
+
+ <v-click>
 
 ## ✅ Good Prompt
 
@@ -153,6 +153,8 @@ class: overflow-y-auto
 - Defined audience
 - Structured requirements
 
+</v-click>
+
 <!--
 COPY-PASTE PROMPTS:
 
@@ -162,9 +164,6 @@ Explain ground fault protection
 GOOD PROMPT:
 You are an industrial automation engineer. Explain ground fault protection for a 480V industrial system. Audience: new maintenance technician. Include why it is used, common causes, and typical troubleshooting steps. Limit to 200 words.
 
-DEMO OPPORTUNITY: If time permits, run both prompts live to show the difference in quality
-
-Time: 3-4 minutes
 -->
 
 ---
@@ -213,13 +212,6 @@ Rewrite the following email to sound professional but friendly. Explain a one-we
 PROMPT 2 - DOCUMENT SUMMARY:
 Summarize this document into a one-page executive overview. Focus on risks, decisions, and next steps. Audience: management.
 
-Use Cases:
-- Delay notifications
-- Status updates
-- Executive summaries
-- Client communications
-
-Time: 3 minutes
 -->
 
 ---
@@ -283,7 +275,6 @@ Find wiring diagrams for Beckhoff EL1008 I/O modules.
 
 Key Benefit: AI understands intent, not just keywords. You can describe what you need conceptually.
 
-Time: 3 minutes
 -->
 
 ---
@@ -298,28 +289,32 @@ layout: default
 
 <div class="p-4 bg-purple-50 dark:bg-purple-900 rounded text-sm">
 
-**This Siemens module is obsolete. Suggest functionally equivalent alternatives. Compare voltage, current, certifications, and risks.**
+**This Siemens module is obsolete. Suggest functionally equivalent alternatives. Compare voltage, current, certifications, and risks. Return source links to official datasheets or manuals**
 
 </div>
 
 </v-click>
 
 <!--
-COPY-PASTE PROMPT:
+This Siemens part is obsolete: 6ES7-131-6BF00-0BA0.
 
-This Siemens module is obsolete. Suggest functionally equivalent alternatives. Compare voltage, current, certifications, and risks.
+Find functionally equivalent replacement options (Siemens preferred first, then other major brands if needed).
+Compare in a table:
+- Function (DI/DO/AI/AO, channel count)
+- Voltage range
+- Current per channel / load capability
+- Wiring type (sink/source, 2-wire/3-wire if applicable)
+- Isolation/grouping
+- Certifications/ratings
+- Mechanical form factor / footprint notes
+- Software/engineering impact (TIA Portal, GSD/EDS, etc.)
+- Lead time / availability considerations (if known)
 
-Use Case: Obsolescence management and product substitution
+Then list:
+- Risks (electrical, mechanical, software, certification)
+- What must be verified in the datasheets before ordering
+Return source links to the official datasheets/manuals.
 
-When to use:
-- End-of-life notifications
-- Long lead times
-- Cost optimization
-- Supply chain issues
-
-Pro tip: Include specific module part number in actual prompt
-
-Time: 2 minutes
 -->
 
 ---
@@ -338,7 +333,7 @@ class: overflow-y-auto
 
 <div class="p-3 bg-gray-50 dark:bg-gray-800 rounded mb-3 text-sm">
 
-**In the Siemens S7-1500 manual, what are the maximum OB1 cycle times? Cite the section if possible.**
+**In the Siemens S7-1500 manual, sumarize the pdf, follow up technical questions, 5 deep search technical questions that can be extracted from the manual and what are the maximum OB1 cycle times? Cite the section if possible.**
 
 </div>
 
@@ -353,19 +348,36 @@ class: overflow-y-auto
 </div>
 
 <!--
-COPY-PASTE PROMPTS:
+You are an industrial automation documentation assistant.
 
-PROMPT 1:
-In the Siemens S7-1500 manual, what are the maximum OB1 cycle times? Cite the section if possible.
+I have uploaded the PDF: “SIMATIC Automation System S7-300 / ET 200M – Compact Operating Instructions.”
 
-PROMPT 2:
-From the Rockwell ControlLogix manual, what are the limits on produced and consumed tags?
+1) First, create a structured technical summary including:
+   - Purpose of the document
+   - Intended use of the product
+   - Key safety warnings
+   - Environmental and installation requirements
+   - Functional safety notes
+   - Security (cybersecurity) considerations
+   - Maintenance and lifecycle notes
 
-Huge Time Saver: Instead of reading 500+ page manuals, AI can extract specific information quickly
+Keep it technical and suitable for an automation engineer.
 
-Always verify: Check the cited section yourself to confirm accuracy
+2) Then generate 10 follow-up technical questions that an engineer might realistically ask after reading this manual, such as:
+   - Parameter limits
+   - Wiring requirements
+   - EMC constraints
+   - Firmware compatibility
+   - Safety approval considerations
+   - Installation constraints
 
-Time: 2 minutes
+3) Finally, generate 5 example deep-search queries that could be asked to extract specific information from this manual (for example: maximum voltage limits, IP rating, temperature class, firmware approval conditions).
+
+Format the output in three sections:
+- Executive Summary
+- Follow-Up Technical Questions
+- Deep-Search Extraction Prompts
+
 -->
 
 ---
@@ -413,13 +425,6 @@ What is the maximum current per channel for this module? Include temperature der
 PROMPT 3 - EMAIL ACTION ITEMS:
 Summarize email and extract action items mentioned in the email.
 
-Applications:
-- Quick spec lookup
-- Email processing
-- Meeting notes summarization
-- Document analysis
-
-Time: 3 minutes
 -->
 
 ---
@@ -427,36 +432,7 @@ layout: default
 class: overflow-y-auto
 ---
 
-# Quotation Assistance
-
-<div class="text-sm overflow-y-auto max-h-120">
-
-## Initial Prompt:
-
-<div class="p-3 bg-green-50 dark:bg-green-900 rounded mb-3">
-
-**Based on this panel description, list the major components and generate a basic bill of materials. Ask any questions that would be beneficial to know which may affect the price that should be asked of the potential customer such as ambient temperature and NEMA rating.**
-
-</div>
-
-</div>
-
-<!--
-COPY-PASTE PROMPT - SIMPLE VERSION:
-
-Based on this panel description, list the major components and generate a basic bill of materials. Ask any questions that would be beneficial to know which may affect the price that should be asked of the potential customer such as ambient temperature and NEMA rating.
-
-This is the quick version for simple quotes. See next slide for detailed version.
-
-Time: 2 minutes
--->
-
----
-layout: default
-class: overflow-y-auto
----
-
-# Quotation - Full Structured Prompt
+# Quotation - Shermel can explain use case
 
 <div class="text-xs overflow-y-auto max-h-120">
 
@@ -472,7 +448,7 @@ class: overflow-y-auto
 - Identify key questions or missing information that could significantly affect pricing, lead time, or design complexity
 - Highlight items that are likely to vary based on customer requirements or standards
 
-**Panel description:** [Paste panel description, quote text, or email here]
+**Panel description:** Lift Station Control Panel [description]
 
 **Present the output in the following sections:**
 - Summary of panel intent
@@ -508,87 +484,6 @@ Present the output in the following sections:
 - Risks or cost drivers to flag early
 
 Use this for complex quotations where thoroughness is critical.
-
-Time: 3 minutes
--->
-
----
-layout: default
----
-
-# Bid Website Tracking
-
-**Website Scraping to Get Project Lists**
-
-Use AI-assisted tools to:
-- Track bid websites
-- Scrape project lists
-- Extract project information
-
-<!--
-TOPIC: Bid Website Tracking
-
-This is more of a capability overview rather than specific prompts.
-
-Tools mentioned:
-- Web scraping tools with AI
-- Automated bid monitoring
-
-Discuss ethical and legal considerations of web scraping.
-
-Time: 1-2 minutes (brief overview)
--->
-
----
-layout: default
-class: overflow-y-auto
----
-
-# Compare Datasheets
-## (Cutsheet Comparison & Selection)
-
-<div class="text-sm overflow-y-auto max-h-120">
-
-<v-click>
-
-## Prompt:
-
-<div class="p-4 bg-blue-50 dark:bg-blue-900 rounded mb-4">
-
-**Compare Beckhoff EL1008 and Siemens DI 16x24VDC ST modules.**
-
-**Create a table with:**
-- Voltage range
-- Current per channel
-- Isolation
-- Certifications
-- Typical use cases
-
-**Based on this comparison, which would you recommend for a harsh industrial environment and why?**
-
-</div>
-
-</v-click>
-
-</div>
-
-<!--
-COPY-PASTE PROMPT:
-
-Compare Beckhoff EL1008 and Siemens DI 16x24VDC ST modules.
-
-Create a table with:
-- Voltage range
-- Current per channel
-- Isolation
-- Certifications
-- Typical use cases
-
-Based on this comparison, which would you recommend for a harsh industrial environment and why?
-
-Great for: Product selection, vendor comparison, specification analysis
-
-Pro tip: Attach datasheets to chat for more accurate comparison
 
 Time: 3 minutes
 -->
@@ -647,6 +542,101 @@ Use Cases:
 Note: Replace "indusautomation.com" with any target website
 
 Time: 2 minutes
+-->
+
+
+---
+layout: default
+---
+
+# Bid Website Tracking
+
+**Website Scraping to Get Project Lists**
+
+Use AI-assisted tools to:
+- Track bid websites
+- Scrape project lists
+- Extract project information
+
+<!--
+You are an AI research assistant specializing in bid and tender tracking for industrial automation businesses.
+
+Please inspect the website: https://www.nunavuttenders.ca/
+
+Search for current and recently posted tender opportunities that may be relevant to the services of Indus Automation (industrial automation, control panels, PLC programming, SCADA/HMI integration, electrical design, fabrication, commissioning, and maintenance).
+
+For each relevant tender, provide:
+- Tender title
+- Tender reference/ID
+- Brief description of the work scope
+- Closing/submission deadline
+- Location (if specified)
+- Contact or procurement office details
+- Any explicit references to industrial automation, control systems, electrical panel work, PLC/SCADA, instrumentation, or related services
+
+Then at the end, summarize:
+- Which tenders are most likely aligned with Indus Automation’s capabilities
+- Why they are relevant (keywords or scope matches)
+- A suggested next action (e.g., register with procurement portal, request documents, prepare preliminary estimate)
+
+Output the results in a structured list format.
+-->
+
+---
+layout: default
+class: overflow-y-auto
+---
+
+# Compare Datasheets
+## (Cutsheet Comparison & Selection)
+
+<div class="text-sm overflow-y-auto max-h-120">
+
+<v-click>
+
+## Prompt:
+
+<div class="p-4 bg-blue-50 dark:bg-blue-900 rounded mb-4">
+
+- Quickly compare competing modules
+- Extract specs without manually reading 20 pages
+- Surface differences that affect design decisions
+- Reduce vendor bias in early selection
+- Generate decision-ready tables in seconds
+- ⚠️ Always verify critical values in official datasheets.**
+
+</div>
+
+</v-click>
+
+</div>
+
+<!--
+I will upload two datasheets and ask AI to compare them.
+
+Prompt:
+
+You are an industrial automation engineer performing a technical comparison.
+
+I have uploaded two datasheets.
+
+Compare the modules and create a structured comparison table including:
+- Voltage range
+- Current per channel
+- Input type (sink/source)
+- Isolation/grouping
+- Diagnostic features
+- Environmental ratings (temperature, vibration if listed)
+- Certifications
+- Physical form factor
+- Typical industrial use cases
+
+Then:
+1) Highlight key technical differences.
+2) Identify any risks when substituting one for the other.
+3) Recommend which would be more suitable for a harsh industrial environment and explain why.
+4) List what must be verified in the original datasheets before final selection.
+
 -->
 
 ---
@@ -793,64 +783,6 @@ class: overflow-y-auto
 
 </div>
 
-<!--
-COPY-PASTE PROMPTS:
-
-PROMPT 1 - TECHNICAL ILLUSTRATION:
-Create a simple, professional illustration that explains how a control panel distributes power to multiple loads. The image should be clean, industrial-looking, and suitable for internal training. Avoid marketing style graphics.
-
-PROMPT 2 - INFOGRAPHIC:
-Create an infographic that explains the lifecycle of an electrical drawing from quotation to as-built. Include steps for design, review, revisions, fabrication, and final documentation. Keep the text minimal and the structure clear.
-
-PROMPT 3 - INTERNAL POSTER:
-Create content for a one-page internal poster titled "Good Drawing Review Practices". Include 5 clear points that focus on accuracy, consistency, and standards compliance. Tone should be practical and non-marketing.
-
-Best tools: Google Gemini, DALL-E, Midjourney
-
-Time: 3 minutes
--->
-
----
-layout: default
-class: overflow-y-auto
----
-
-# Create Content - Scenarios
-
-<div class="text-sm overflow-y-auto max-h-120">
-
-<v-clicks>
-
-<div class="p-3 bg-blue-50 dark:bg-blue-900 rounded mb-3">
-
-**Write a short scenario describing an electrical designer receiving late client comments that impact the panel layout. Show how unclear early requirements can lead to rework. Keep it realistic and suitable for a training discussion.**
-
-</div>
-
-<div class="p-3 bg-blue-50 dark:bg-blue-900 rounded">
-
-**Create a simple visual that shows a PLC, HMI, and control panel as characters working together in a factory. Keep it light and suitable for internal training.**
-
-</div>
-
-</v-clicks>
-
-</div>
-
-<!--
-COPY-PASTE PROMPTS:
-
-PROMPT 1 - TRAINING SCENARIO:
-Write a short scenario describing an electrical designer receiving late client comments that impact the panel layout. Show how unclear early requirements can lead to rework. Keep it realistic and suitable for a training discussion.
-
-PROMPT 2 - CHARACTER VISUAL:
-Create a simple visual that shows a PLC, HMI, and control panel as characters working together in a factory. Keep it light and suitable for internal training.
-
-Use for: Training materials, team discussions, process improvement workshops
-
-Time: 2 minutes
--->
-
 ---
 layout: default
 class: overflow-y-auto
@@ -880,23 +812,7 @@ class: overflow-y-auto
 </div>
 
 <!--
-COPY-PASTE PROMPT:
-
-Create content for a one-page marketing poster for Indus Automation that promotes the company's industrial automation services and expertise.
-
-Include:
-- A bold headline that clearly conveys what Indus Automation does
-- Key service offerings such as custom control panel design, PLC programming, HMI/SCADA solutions, troubleshooting, and commissioning
-- Target industries where Indus Automation works (e.g., agriculture, food processing, mining, water/wastewater, utilities, manufacturing) based on typical automation needs
-- A short tagline emphasizing quality, customized solutions, and reliability
-- Contact information and a call-to-action (e.g., "Request a Quote Today")
-- A visual style suggestion (professional, industrial, modern)
-
-Do not use overly technical or confusing language—focus on value to customers.
-
-Output: Marketing copy that can be handed to graphic designer
-
-Time: 2 minutes
+Create content for a one-page marketing poster for Indus Automation that promotes the company’s industrial automation services and expertise. Include: • A bold headline that clearly conveys what Indus Automation does • Key service offerings such as custom control panel design, PLC programming, HMI/SCADA solutions, troubleshooting, and commissioning • Target industries where Indus Automation works (e.g., agriculture, food processing, mining, water/wastewater, utilities, manufacturing) based on typical automation needs • A short tagline emphasizing quality, customized solutions, and reliability • Contact information and a call-to-action (e.g., “Request a Quote Today”) • A visual style suggestion (professional, industrial, modern) Do not use overly technical or confusing language—focus on value to customers.
 -->
 
 ---
@@ -994,32 +910,10 @@ Create Agents with:
 
 - **Writing Coach**
 - **Prompt Coach**
-- **AutoCAD Drawings** (Read, Create, Transform)
-
-Generate or modify AutoCAD logic and automation routines
 
 </v-click>
 
 </div>
-
-<!--
-CUSTOM AI AGENTS
-
-What are agents?
-- Pre-configured AI assistants with specific roles
-- Can have custom instructions and knowledge
-- Shareable within organization
-
-Example agents to create:
-1. Writing Coach - polish all written communication
-2. Prompt Coach - help team members write better prompts
-3. AutoCAD Assistant - CAD-specific help
-4. PLC Troubleshooting - diagnostic assistance
-
-How to create: Most AI platforms (ChatGPT, Claude) now support custom agents/GPTs
-
-Time: 3 minutes
--->
 
 ---
 layout: default
