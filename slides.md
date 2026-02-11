@@ -1367,6 +1367,63 @@ layout: default
 class: overflow-y-auto
 ---
 
+# Different Types of Modes / Models
+## When to Use Each (Copilot / GPT Modes)
+
+<div class="grid grid-cols-2 gap-8 text-sm overflow-y-auto max-h-120">
+
+<div>
+
+## ⚡ Default / Quick Response
+
+**Best For:**
+- Email drafting
+- Simple summaries
+- Quick explanations
+- Formatting tasks
+- Rewriting content
+- Basic coding help
+
+**Why:**
+- Faster
+- Lower compute
+- Good for routine work
+- Ideal for iterative prompting
+
+Use when speed > depth.
+
+</div>
+
+<div>
+
+## 🧠 Think Deeper / Deep Research
+
+**Best For:**
+- Complex engineering reasoning
+- Multi-step logic problems
+- Comparing datasheets
+- Risk analysis
+- Capacity planning
+- Code generation with edge cases
+- Strategic decisions
+
+**Why:**
+- More structured thinking
+- Better reasoning
+- Fewer surface-level answers
+- Stronger comparison outputs
+
+Use when accuracy > speed.
+
+</div>
+
+</div>
+
+---
+layout: default
+class: overflow-y-auto
+---
+
 # 🎯 Interactive Activity
 ## Let's Practice Together!
 
@@ -1432,63 +1489,6 @@ Emphasize:
 - Use AI to accelerate, not replace, verification
 
 -->
-
----
-layout: default
-class: overflow-y-auto
----
-
-# Different Types of Modes / Models
-## When to Use Each (Copilot / GPT Modes)
-
-<div class="grid grid-cols-2 gap-8 text-sm overflow-y-auto max-h-120">
-
-<div>
-
-## ⚡ Default / Quick Response
-
-**Best For:**
-- Email drafting
-- Simple summaries
-- Quick explanations
-- Formatting tasks
-- Rewriting content
-- Basic coding help
-
-**Why:**
-- Faster
-- Lower compute
-- Good for routine work
-- Ideal for iterative prompting
-
-Use when speed > depth.
-
-</div>
-
-<div>
-
-## 🧠 Think Deeper / Deep Research
-
-**Best For:**
-- Complex engineering reasoning
-- Multi-step logic problems
-- Comparing datasheets
-- Risk analysis
-- Capacity planning
-- Code generation with edge cases
-- Strategic decisions
-
-**Why:**
-- More structured thinking
-- Better reasoning
-- Fewer surface-level answers
-- Stronger comparison outputs
-
-Use when accuracy > speed.
-
-</div>
-
-</div>
 
 ---
 layout: center
